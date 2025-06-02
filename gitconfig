@@ -1,0 +1,7 @@
+[core]
+	editor = nvim
+[user]
+	name = hafifrahman
+	email = hazeha16@gmail.com
+[init]
+	defaultBranch = main

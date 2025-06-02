@@ -1,0 +1,12 @@
+syntax = "All"                       # All (default), Lua51, Lua52, Lua53, Lua54, LuaJIT, Luau
+column_width = 120                   # 120 (default)
+line_endings = "Unix"                # Unix (default), Windows
+indent_type = "Spaces"               # Tabs (default), Spaces
+indent_width = 2                     # 4 (default)
+quote_style = "AutoPreferSingle"     # AutoPreferDouble (default), AutoPreferSingle, ForceDouble, ForceSingle. AutoPrefer
+call_parentheses = "None"            # Always (default), NoSingleString, NoSingleTable, None, Input
+space_after_function_names = "Never" # Never (default), Definitions, Calls, Always
+collapse_simple_statement = "Never"  # Never (default), FunctionOnly, ConditionalOnly, Always
+
+[sort_requires]
+enabled = true # false (default)
