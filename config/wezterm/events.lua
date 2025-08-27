@@ -12,6 +12,30 @@ function M.setup()
 
     window:gui_window():set_inner_size(width, height)
   end)
+
+  -- wezterm.on('update-status', function(window, _)
+  --   local tab = window:active_tab()
+  --   local panes = tab:panes()
+  --   local alt_screen_active = false
+  --
+  --   for i = 1, #panes, 1 do
+  --     local pane = panes[i]
+  --     if pane:is_alt_screen_active() then
+  --       alt_screen_active = true
+  --       break
+  --     end
+  --   end
+  --
+  --   if alt_screen_active then
+  --     window:set_config_overrides {
+  --       window_padding = { left = 0, right = 0, top = 0, bottom = 0 },
+  --     }
+  --   else
+  --     window:set_config_overrides {
+  --       window_padding = nil,
+  --     }
+  --   end
+  -- end)
 end
 
 return M
