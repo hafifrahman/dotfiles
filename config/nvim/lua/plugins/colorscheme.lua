@@ -2,6 +2,7 @@ return {
   {
     'rebelot/kanagawa.nvim',
     opts = {
+      compile = true,
       transparent = true,
       overrides = function(colors)
         local theme = colors.theme
@@ -12,8 +13,13 @@ return {
           DiagnosticSignHint = { bg = 'none' },
           DiagnosticSignInfo = { bg = 'none' },
           DiagnosticSignWarn = { bg = 'none' },
+          FloatTitle = { fg = theme.syn.fun },
           LineNr = { bg = 'none' },
           StatusLine = { bg = theme.ui.bg_p1 },
+
+          GitSignsAdd = { bg = 'none' },
+          GitSignsChange = { bg = 'none' },
+          GitSignsDelete = { bg = 'none' },
         }
 
         local is_transparent = {
@@ -24,10 +30,6 @@ return {
           StatusLine = { bg = 'none' },
           TabLineFill = { bg = 'none' },
           TabLineSel = { bg = 'none' },
-
-          GitSignsAdd = { bg = 'none' },
-          GitSignsChange = { bg = 'none' },
-          GitSignsDelete = { bg = 'none' },
         }
 
         return vim.tbl_deep_extend('force', groups, config.transparent and is_transparent or {
